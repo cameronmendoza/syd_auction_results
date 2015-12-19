@@ -14,7 +14,8 @@ def graph():
 
 	plt.title('Sydney\'s Clearance rate')
 	plt.ylabel('Clearance rate (%)')
-	plt.ylabel('Date')
+	plt.xlabel('Date')
 	plt.show()
 
 graph()
+
