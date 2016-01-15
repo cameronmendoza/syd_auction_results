@@ -10,7 +10,7 @@ def graph():
 
 	ax1 = fig.add_subplot(1, 1, 1, axisbg='white')
 
-	plt.plot_date(x=date, y=cr, fmt='')
+	plt.plot_date(x=date, y=cr, fmt='ro')
 
 	plt.title('Sydney\'s Clearance rate')
 	plt.ylabel('Clearance rate (%)')
