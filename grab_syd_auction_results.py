@@ -9,7 +9,7 @@ page = requests.get('https://www.realestate.com.au/auction-results/nsw')
 tree = html.fromstring(page.content)
 
 # Create list from raw XPath query
-date = tree.xpath('/html/body/section/p/time/@datetime')
+date = tree.xpath('/html/body/section/section[1]/p/time/@datetime')
 clearance_rate_percentage = tree.xpath('/html/body/main/section[1]/div[2]/div[1]/text()')
 total_sched_auctions = tree.xpath('/html/body/main/section[1]/div[1]/div[1]/text()')
 sold_prior_to_auction = tree.xpath('/html/body/main/section[1]/ul/li[1]/text()')
