@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import numpy as np
 
+
 def graph():
 	date, cr, total_sched_auct, sold_prior, passed, sold_at, withdrawn, sold_after = np.loadtxt(
 		'syd_results.csv', delimiter=',', unpack=True, skiprows=1,
