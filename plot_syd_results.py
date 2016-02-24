@@ -11,7 +11,7 @@ def graph():
 
 	ax1 = fig.add_subplot(1, 1, 1, axisbg='white')
 
-	plt.plot_date(x=date, y=cr, fmt='o')
+	plt.plot_date(x=date, y=cr, marker='o', linestyle='-')
 
 	plt.title('Sydney\'s Clearance rate')
 	plt.ylabel('Clearance rate (%)')
