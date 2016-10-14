@@ -12,7 +12,7 @@ def graph():
 	ax1 = fig.add_subplot(1, 1, 1, axisbg='white')
 
 	# General scatter plot
-        plt.plot_date(x=date, y=cr, marker='x', color='b')
+        plt.plot_date(x=date, y=cr, marker='x', color='r')
 
         # Linear interpolation
 	#plt.plot_date(x=date, y=cr, marker='', linestyle='-', color='b')
