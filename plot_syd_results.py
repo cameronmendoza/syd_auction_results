@@ -15,7 +15,7 @@ def graph():
         plt.plot_date(x=date, y=cr, marker='x', color='b')
 
         # Linear interpolation
-	#plt.plot_date(x=date, y=cr, marker='', linestyle='-', color='b')
+	plt.plot_date(x=date, y=cr, marker='', linestyle='-', color='g')
 
         # Line of best fit 
         plt.plot(np.unique(date), np.poly1d(np.polyfit(date, cr, 1))(np.unique(date)))
