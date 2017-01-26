@@ -15,10 +15,10 @@ def graph():
         plt.plot_date(x=date, y=cr, marker='x', color='b')
 
         # Linear interpolation
-	# plt.plot_date(x=date, y=cr, marker='', linestyle='-', color='g')
+	plt.plot_date(x=date, y=cr, marker='', linestyle='-', color='g')
 
         # Line of best fit 
-        # plt.plot(np.unique(date), np.poly1d(np.polyfit(date, cr, 1))(np.unique(date)))
+        plt.plot(np.unique(date), np.poly1d(np.polyfit(date, cr, 1))(np.unique(date)))
 
 	plt.title('Sydney\'s Clearance rate')
 	plt.ylabel('Clearance rate (%)')
